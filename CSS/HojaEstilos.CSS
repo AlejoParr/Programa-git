@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #000000;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #000000;
+}
+
+h3{
+    font-size: 1.8em;
+    color: #000000;
+}
+p{
+    font-size: 1.2em;
+    color: #000000;
+}
+*{
+    box-sizing: border-box;
+    /* Haciendo un box-sizing para todos los elementos nos aseguramos de que en el
+    margin o padding, estos no crezcan más allá del tamaño dado*/
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 35px;
+    border-radius: 8px;
+    border: 3px rgba(240, 55, 55, 0.5);
+    box-shadow: 3px 3px rgba(240, 55, 55, 0.5);
+    color: rgb(255, 81, 0);
+    background-color: blueviolet;
+}
+
+button:hover{
+    color: aqua;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(70, 67, 67);
+    font-size: 1.2em;
+}
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 2.0em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    text-align: center;
+    padding: 25px;
+    flex-direction: column;
+    display: flex;
+}
+
+header a{
+    padding: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: aqua;
+}
+
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5) ),
+    url("/Imagenes/AdobeStock_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#intro h1{
+    color: rgb(255, 255, 255);
+}
+
+#BackEnd .container{
+display: flex;
+padding: 100px;
+justify-content: center;
+flex-direction: row;
+}
+
+#BackEnd .BackEndText{
+    align-items: center;
+    justify-content: center;
+
+}
+
+#BackEnd .image-container1{
+    background-image: url(/Imagenes/gafas-pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 2800px;
+    margin: 20px;
+    display: flex;
+}
+#FrontEnd .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#FrontEnd .image-container2{
+    background-image: url(/Imagenes/web-dev.jpg);
+    background-position: center;
+}
+#FullStack .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    }
+
+    #FullStack .cardcontainer{
+        display: flex;
+        justify-content: center;
+    }
+#FullStack .card{
+    padding: 150px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    margin: 20px;
+    border-radius: 15px;
+}
+/* Como tenemos 3 pequeñas secciones que debemos trabajar por
+separado, incluyendo distintas imágenes, vamos a referir cada uno
+de los child de .card*/
+.card:first-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),
+    rgba(0,0,0,0.5) ), url(/Imagenes/full-stack-engineer.jpg);
+
+}
+
+.card:nth-last-child(2) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),
+    rgba(0,0,0,0.5) ), url(/Imagenes/full-stack.png);
+}
+
+.card:last-child{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),
+    rgba(0,0,0,0.5) ), url(/Imagenes/Guide_to_Full_Stack_Development.jpg);
+}
+
+#FullStack p{
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#FullStack h3{
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+#PythonforWeb .container3{
+text-align: initial;
+}
+
+#PythonforWeb .image-container3{
+    background-image: url(/Imagenes/Web-Python.jpg);
+}
+
+
+
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
